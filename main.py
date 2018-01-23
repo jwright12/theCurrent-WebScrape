@@ -8,13 +8,8 @@ webScrape = scraper.webScrapeTheCurrent(URL)
 # Call method that cleans the web scrape and packs it in a list of dictionaries
 song_dictionaries = webScrape.musicHTMLParser()
 
-song_dictionaries
-
 # Instantiate DB connection
 db_connect = DataBaseConnection()
 
 # Pass dictionary to unpack and load into DB
 db_connect.insertDB(song_dictionaries)
-
-# Create cursor object from DB instantiation
-# Verify DB connection
