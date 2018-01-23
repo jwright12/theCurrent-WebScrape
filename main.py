@@ -2,7 +2,7 @@ from database_manager import DataBaseConnection
 import scraper
 
 URL = 'https://www.thecurrent.org/playlist'
-# Scrape todays playlist by running at 11:59pm at URL below
+# Scrape todays playlist by running at 11:59pm at URL above
 webScrape = scraper.webScrapeTheCurrent(URL)
 
 # Call method that cleans the web scrape and packs it in a list of dictionaries
