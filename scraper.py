@@ -32,7 +32,7 @@ class webScrapeTheCurrent:
         # Get todays date
         today = pd.Timestamp("today").strftime("%Y/%m/%d")
 
-        # Blank dictionary, fill with parsed data and pass back to main.py
+        # Blank list, fill with parsed data and pass back to main.py
         todays_songs = []
 
         for song_container in song_containers:
